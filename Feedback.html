@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="feedback-container">
+        <div class="header">
+            <h1>We Value Your Feedback!</h1>
+            <div class="profile-pic">
+                <img src="ultra-instinct-goku-dragon-ball-super-5k-3840x2160-5127.jpg" alt="Profile Picture">
+            </div>
+        </div>
+        <form id="feedback-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="rating">Rating:</label>
+                <div class="rating">
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5">★</label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4">★</label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3">★</label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2">★</label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1">★</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comments">Your feedback or any msg:</label>
+                <textarea id="comments" name="comments" rows="4" required></textarea>
+            </div>
+            <button type="submit">Submit Feedback</button>
+        </form>
+        <div class="social-links">
+            <span class="follow-text">Follow Me Here:</span>
+            <a href="https://www.instagram.com/praful__mohite" target="_blank" class="social-icon">
+                <img src="insatgram.jpeg" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/praful-mohite-9872932a7" target="_blank"rel="noopener noreferrer"class="social-icon">
+                <img src="linkedin.jpeg" alt="LinkedIn">           
+        </div>  
+    </div>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init('WjynmsvFD7oNsG9aI');
+        })();
+    </script>
+    <script src="feedback.js"></script>
+</body>
+</html>
